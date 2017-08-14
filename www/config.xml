@@ -2,7 +2,6 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.ko.travelfaq" versionCode="32250" version="3.2.0"/>
 	<name>Travel FAQ</name>
 	<description>TCCC Travel FAQ for iOS</description>
-
     <author email="" href="http://phonegap.com">GSS Manila COE</author>
     <preference name="permissions" value="none" />
     <preference name="phonegap-version" value="cli-6.5.0" />
