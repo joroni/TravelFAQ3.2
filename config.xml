@@ -1,9 +1,12 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.ko.travelfaq" versionCode="32250" version="3.2.0"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.ko.travelfaq" versionCode="320" version="3.2.0">
 	<name>Travel FAQ</name>
-	<description>TCCC Travel FAQ for iOS</description>
-    <author email="" href="http://phonegap.com">GSS Manila COE</author>
-    <preference name="permissions" value="none" />
+	<description>TCCC Travel FAQ app</description>
+	<author href="http://icokecontent.chinacloudapp.cn" email="support@chinacloudapp.com">GSS Manila COE</author>
+	<!--
+      This allows your app to load assets from all *.phongap.com domains
+    -->
+	 <preference name="permissions" value="none" />
     <preference name="phonegap-version" value="cli-6.5.0" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
