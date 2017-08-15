@@ -30,16 +30,19 @@
 -->
 <html>
     <head>
-		<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"/>
-
+		
 		 <meta charset="utf-8">
 	
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
    
 		
-        <title>Travel FAQ</title>
-        <link rel="stylesheet" href="jquery.mobile.theme-1.4.2.min.css" type="text/css"/>
-        <link rel="stylesheet" href="css/themes/CocaColaRed.min.css" type="text/css"/>
+		<title>Travel FAQ</title>
+		
+
+		<link rel="stylesheet" href="css/themes/bootstrap/css/bootstrap.min.css" type="text/css"/>
+		<link rel="stylesheet" href="jquery.mobile.theme-1.4.2.min.css" type="text/css"/>
+		<link rel="stylesheet" href="css/themes/CocaColaRed.min.css" type="text/css"/>
+		
         <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" type="text/css"/>
         <link rel="stylesheet" href="jquery.mobile.structure-1.4.2.min.css" type="text/css"/>
         <link rel="stylesheet" href="css/custom.css" type="text/css"/>
@@ -54,7 +57,7 @@
 				<!-- the coca-cola logo -->
 			 <div class="page-header" id="titlebar"></div>
              <div class="ui-navbar top-ui-navbar ui-corner-all">
-				 <a href="#" class="topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button" onclick="appUI.leftHeaderButtonClick()" title="Menu"></a>
+				 <a href="#" id="menu-toggle" class="topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button" onclick="appUI.leftHeaderButtonClick()" title="Menu"></a>
 				<!--<a class="nav-icon ui-btn ui-btn-left ui-icon-grid ui-btn-icon-notext ui-corner-all" onclick="appUI.leftHeaderButtonClick()" data-icon="grid" data-iconpos="notext" data-direction="reverse" id="leftHeaderButton">Countries</a>
 				<a class="topnav-icons fa fa-3x  topnav-icons fa fa-ellipsis-h w3-hide-large w3-right w3-gear-item w3-button ui-link ui-btn-icon-notext ui-btn-right" href="#optionsPanel" data-icon="gear" data-iconpos="notext">Options</a>       -->     
 				<a class="topnav-icons  ui-btn-right" href="#optionsPanel"><i class="fa fa-ellipsis-v w3-hide-large w3-right w3-button" aria-hidden="true"></i></a>
@@ -68,7 +71,7 @@
                 
                 </div>               
 			</div>
-			
+			<div id="connection_status" class="offline"></div>
 			<!-- content area, dynamic -->
 			<div data-role="content" id="content" class="content-area" >
                 <div class="ui-grid-a" style="padding:5px;padding-bottom:0px;">

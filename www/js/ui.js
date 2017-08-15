@@ -34,7 +34,7 @@ appUI.popAbout = function() {
 }
 
 appUI.initialize = function() {	
-	$('<div id="connection_status"></div>').insertAfter('#header');
+	//$('<div id="connection_status"></div>').insertAfter('#header');
 	$( "#updateProgressDialog").enhanceWithin().popup({history:false});
 	$( "#updateProgressDialog" ).popup('close');	
 	
@@ -487,11 +487,12 @@ appUI.populateCountryDetails = function(countryCode) {
 						}
 					}
 					
-					officeLoc +='<div class="ui-show-map-container">';
-					officeLoc +='<a href="#" onclick="openExtLink(\'' + mapLink + '\')">[Show Map]</a>';
-					if (mapDirLink) {
-						officeLoc +='&nbsp;&nbsp;&nbsp;<a href="#" onclick="openExtLink(\'' +  mapDirLink + '\')">[Get Directions]</a>';
-					}
+				officeLoc +='<div class="ui-show-map-container">';
+					
+					officeLoc +='<a href="#" class="btn btn-danger" onclick="openExtLink(\'' + mapLink + '\')">View Map</a>';
+					/* if (mapDirLink) {
+						officeLoc +='&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-danger" onclick="openExtLink(\'' +  mapDirLink + '\')">Navigate</a>';
+					} */
 					officeLoc +='</div>';
 				}	
 				officeLoc +='</div><br>';				

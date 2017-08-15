@@ -85,6 +85,11 @@
               <icon src="res/icon/ios/icon-50-2x.png" width="100" height="100" />
      </platform>
 
+
+<allow-intent href="tel:*" />
+<allow-intent href="mailto:*" />
+
+
     <access origin="*" />
 	 <plugin name="cordova-plugin-whitelist" version="1"/>
 
