@@ -30,7 +30,7 @@ appUI.popAbout = function() {
 }
 
 appUI.initialize = function() {	
-	
+	$('<div id="connection_status"></div>').insertAfter('#header');
 	$( "#updateProgressDialog").enhanceWithin().popup({history:false});
 	$( "#updateProgressDialog" ).popup('close');	
 	
@@ -189,9 +189,13 @@ appUI.checkUpdate = function (){
 	);
 }
 
+
+
+
 appUI.initiateDataUpdate = function() {	
 
 	if (!hasConnection()) {
+		
 		alert('Connection is required.\n\nPlease connect to internet and try again.');
 		return;
 	}

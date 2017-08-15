@@ -575,3 +575,14 @@ a.topnav-icons.ui-btn-centered.ui-link {
      -webkit-box-shadow: 0 0 12px rgba(204, 0, 9, 0) !important; 
      box-shadow: 0 0 12px rgba(204, 0, 9, 0) !important; 
 }
+
+
+#connection_status {
+    width: 100%;
+    height: 2px;
+    background: green;
+}
+
+#connection_status.offline {
+    background: gray;
+}
