@@ -5,9 +5,13 @@
 *
 * REVISION HISTORY
 *
-* Author,email :
-* Date Revised :
-* Description  :
+* Author,email : Raymund Niconi, niconi@coca-cola.com, jraymund.niconi@gmail.com
+* Date Revised : August 16, 2017
+* Description  : Modified connection condition
+*
+* Author,email : 
+* Date Revised : 
+* Description  : 
 *
 **/
 var appUI = new Object();
